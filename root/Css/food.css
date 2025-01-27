@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow: scroll;
+  font-size: 18px;
+}
+body {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(241, 120, 15, 1) 0%,
+    rgba(73, 47, 121, 1) 65%
+  );
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.navbar-brand img {
+  width: 10%;
+}
+.navbar-brand img:hover {
+  opacity: 0.8;
+}
+.nav-link {
+  color: #ffff;
+}
+.nav-link:hover {
+  color: #f1780f;
+}
+/*---------FULL MENU------------*/
+.full-menu {
+  margin: 2rem 0;
+}
+.full-menu-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.full-menu-head {
+  text-align: center;
+}
+.full-menu-head h2 {
+  font-size: 2.6rem;
+}
+.full-menu-head h2 a {
+  text-decoration: none;
+  color: white;
+}
+#active {
+  color: #f1780f;
+  -webkit-text-stroke: 1px white;
+}
+.full-menu-btns {
+  padding: 0.6rem 0;
+  display: flex;
+  justify-content: center;
+}
+.full-menu-btn {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  color: #f1780f;
+  display: block;
+  margin: 0 1rem;
+  cursor: pointer;
+  outline: 0;
+  transition: opacity 0.4s ease-out;
+}
+.full-menu-btn::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  margin-top: 0.5rem;
+  width: 0;
+  transition: width 0.4s ease-out;
+}
+.full-menu-btn:hover::after {
+  width: 100%;
+}
+.full-menu-btn:hover {
+  opacity: 0.8;
+}
+.active-btn {
+  color: white;
+}
+.food-items {
+  margin: 2rem 0;
+}
+.food-item {
+  border-radius: 4px;
+  overflow: hidden;
+  background: white;
+  color: #492f79;
+  margin: 0.6rem;
+  box-shadow: 0 0 16px -4px #f1780f;
+  display: none;
+  animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.food-img img {
+  border-radius: 4px;
+}
+.food-content {
+  padding: 1rem;
+}
+.food-name {
+  color: #492f79;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.line {
+  width: 100px;
+  height: 3px;
+  background: #f1780f;
+}
+.food-price {
+  padding: 0.4rem 0;
+  font-weight: 600;
+  font-size: 1.4rem;
+  opacity: 0.8;
+}
+.rating {
+  display: flex;
+  list-style: none;
+}
+.rating .fa-star {
+  margin-right: 0.4rem;
+  color: #f1780f;
+}
+.category {
+  padding-top: 0.2rem;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.category span {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#choice1 {
+  color: #f1780f;
+}
+#choice2 {
+  color: silver;
+}
+
+@media screen and (min-width: 600px) {
+  .food-item {
+    display: grid;
+    grid-template-columns: 25% auto;
+    align-items: center;
+    padding: 1rem;
+    column-gap: 1rem;
+  }
+  .food-content {
+    padding: 0;
+  }
+  .full-menu-btn {
+    font-size: 0.7rem;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .full-menu-head p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .full-menu-btn {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .full-menu-head {
+    width: 50%;
+  }
+  .food-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+  .full-menu-btn {
+    font-size: 0.8rem;
+  }
+}
+/*---------GAME DAY MENU------------*/
+
+/*---------BRUNCH MENU------------*/
+
+/*---------FOOTER------------*/
+footer hr {
+  display: block;
+  border: solid 5px white;
+}
+#social-logo:hover {
+  opacity: 0.8;
+}
+#contact-heading {
+  color: #f1780f;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.contact li {
+  list-style: none;
+}
+.contact a {
+  text-decoration: none;
+  color: white;
+}
+.contact a:hover {
+  color: #f1780f;
+}
+#phone-num {
+  text-decoration: none;
+  color: white;
+}
+#phone-num:hover {
+  color: #f1780f;
+}
+#hours-heading {
+  color: #f1780f;
+}
+.hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.hours li {
+  list-style: none;
+}
+#copyright strong {
+  color: #f1780f;
+}
+
+/*---------MEDIA QUERIES------------*/
+@media (max-width: 480px) {
+  html {
+    font-size: 0.3rem;
+    overflow: auto;
+  }
+  .navbar-brand img {
+    width: 30%;
+  }
+  .full-menu-btns {
+    padding: 0.6rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}

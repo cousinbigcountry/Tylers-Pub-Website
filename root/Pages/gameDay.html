@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TPP| Food</title>
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="../Images/tpp-logo.png"
+      type="image/x-icon"
+    />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/a7829d9a8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Local Css-->
+    <link rel="stylesheet" href="../Css/food.css" />
+  </head>
+  <body>
+    <div id="banner"></div>
+    <nav class="navbar navbar-expand-lg bg-body-none">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/Clients/z-tylers-pub/index.html"
+          ><img src="../Images/tpp-logo.png" alt="tpp logo"
+        /></a>
+        <button
+          class="navbar-toggler navbar-dark ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="specials.html">Specials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drinks.html">Drinks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="food.html">Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item" id="phone-btn">
+              <a class="nav-link" href="tel:+18649739546"
+                ><i class="fa fa-phone"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!------------------------FULL MENU-------------------->
+    <section class="full-menu">
+      <div class="full-menu-container">
+        <div class="full-menu-head">
+          <h2><a href="food.html">Regular Menu</a></h2>
+          <h2 id="active">Game Day</h2>
+          <h2><a href="brunch.html">Brunch</a></h2>
+        </div>
+        <br />
+        <div class="full-menu-btns">
+          <button type="button" class="full-menu-btn active-btn" id="new">
+            New
+          </button>
+          <button type="button" class="full-menu-btn" id="apps">Apps</button>
+          <button type="button" class="full-menu-btn" id="pizzas">
+            Pizzas/Calzones
+          </button>
+          <button type="button" class="full-menu-btn" id="calzones">
+            Specialty Pizzas
+          </button>
+          <button type="button" class="full-menu-btn" id="burgers">
+            Burgers, Baskets & Wraps
+          </button>
+          <button type="button" class="full-menu-btn" id="wings">Wings</button>
+          <button type="button" class="full-menu-btn" id="salads">
+            Salads
+          </button>
+        </div>
+        <div class="food-items">
+          <!------------------------New-------------------->
+
+          <!--ITEM BEGIN-->
+          <div class="food-item new">
+            <div class="food-img">
+              <img src="../Images/burger1.png" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Burger 1</h2>
+              <div class="line"></div>
+              <h3 class="food-price">$15</h3>
+              <ul class="rating">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <p class="category">Categories: <span>New</span></p>
+            </div>
+          </div>
+          <!--ITEM END-->
+
+          <!------------------------APPS-------------------->
+
+          <!--ITEM BEGIN-->
+          <div class="food-item apps">
+            <div class="food-img">
+              <img src="../Images/app1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Tater Kegs</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$7.99</h3>-->
+              <p class="category">
+                <span
+                  >4 Jumbo stuffed Tater Tots. Your choice of
+                  <span id="choice1">Bacon/Cheddar/Chive</span> or
+                  <span id="choice2">Bacon/Jalapeno Cream Cheese</span>.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item apps">
+            <div class="food-img">
+              <img src="../Images/app1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Onion Rings</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$7.99</h3>-->
+              <p class="category">
+                <span>Comes with honey mustard.</span>
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item apps">
+            <div class="food-img">
+              <img src="../Images/app1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">French Fries</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$7.99</h3>-->
+              <p class="category">
+                <span>Toss in any of our dry rubs for an upcharge.</span>
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item apps">
+            <div class="food-img">
+              <img src="../Images/app1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Fried Pickles</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$7.99</h3>-->
+              <p class="category">
+                <span>Comes with ranch.</span>
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item apps">
+            <div class="food-img">
+              <img src="../Images/app1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Garlic Knots</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$7.99</h3>-->
+              <p class="category">
+                <span
+                  ><span id="choice1">Half(8)</span>
+                  <span id="choice2">Full(16)</span><br />
+                  Hand rolled dough, deep fired and tossed in our Garlic
+                  Parmesan Sauce. Comes with Marinara.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item apps">
+            <div class="food-img">
+              <img src="../Images/app1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Tater Tots</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$7.99</h3>-->
+              <p class="category">
+                <span>Toss in any of our dry rubs for an upcharge.</span>
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item apps">
+            <div class="food-img">
+              <img src="../Images/app1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Cheesesticks (6)</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$7.99</h3>-->
+              <p class="category">
+                <span>Comes with Marinara.</span>
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item apps">
+            <div class="food-img">
+              <img src="../Images/app1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Corn Dog Nuggets (12)</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$7.99</h3>-->
+              <p class="category">
+                <span>Comes with honey mustard.</span>
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item apps">
+            <div class="food-img">
+              <img src="../Images/app1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Loaded Fries</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$7.99</h3>-->
+              <p class="category">
+                <span
+                  >Includes mixed cheeses and bacon. Can add select items as
+                  toppings for upcharge.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item apps">
+            <div class="food-img">
+              <img src="../Images/app1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Tot-chos</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$7.99</h3>-->
+              <p class="category">
+                <span
+                  >Includes mixed cheeses, lettuce and tomatoes. Can add select
+                  items as toppings for upcharge.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+
+          <!------------------------PIZZAS/CALZONES-------------------->
+
+          <!--ITEM BEGIN-->
+          <div class="food-item pizzas">
+            <div class="food-img">
+              <img src="../Images/pizza2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">12" Pizza</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span>Additional toppings for an upcharge.</span>
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item pizzas">
+            <div class="food-img">
+              <img src="../Images/pizza2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">16" Pizza</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span>Additional toppings for an upcharge.</span>
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item pizzas">
+            <div class="food-img">
+              <img src="../Images/pizza2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Calzone</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >Includes Mozzarella and ricotta cheeses. Additional toppings
+                  for an upcharge.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item pizzas">
+            <div class="food-img">
+              <img src="../Images/pizza2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Toppings</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >Pepperoni, Sausage, Ham, Mushrooms, Peppers, Onions, Bacon,
+                  Tomatoes, Spinach, Chicken, Goat Cheese, Pineapple</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+
+          <!------------------------SPECIALTY PIZZAS-------------------->
+          <!--ITEM BEGIN-->
+          <div class="food-item calzones">
+            <div class="food-img">
+              <img src="../Images/calzone1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">The Workman</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  ><span id="choice1">12"</span> / <span id="choice2">16"</span
+                  ><br />
+                  White based pizza topped with pepperoni, sausage, spinach and
+                  goat cheese.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item calzones">
+            <div class="food-img">
+              <img src="../Images/calzone1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">BBQ Chicken</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  ><span id="choice1">12"</span> / <span id="choice2">16"</span
+                  ><br />
+                  BBQ based pizza topped with grilled chicken, onions, bacon and
+                  a swirl of honey BBQ Sauce.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item calzones">
+            <div class="food-img">
+              <img src="../Images/calzone1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Chicken Bacon Ranch</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  ><span id="choice1">12"</span> / <span id="choice2">16"</span
+                  ><br />
+                  Buffalo sauce based pizza topped with grilled chicken, bacon
+                  and a swirl of ranch dressing.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item calzones">
+            <div class="food-img">
+              <img src="../Images/calzone1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Meat Lovers</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  ><span id="choice1">12"</span> / <span id="choice2">16"</span
+                  ><br />
+                  Pepperoni, ham, sausage and bacon.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item calzones">
+            <div class="food-img">
+              <img src="../Images/calzone1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Hawaiian</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  ><span id="choice1">12"</span> / <span id="choice2">16"</span
+                  ><br />
+                  Ham, pineapple and bacon.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item calzones">
+            <div class="food-img">
+              <img src="../Images/calzone1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">The Dirty South</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  ><span id="choice1">12"</span> / <span id="choice2">16"</span
+                  ><br />
+                  White based pizza topped with pimento cheese, bacon, fried
+                  chicken and a swirl of honey BBQ sauce.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item calzones">
+            <div class="food-img">
+              <img src="../Images/calzone1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">The Big Z</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  ><span id="choice1">12"</span> / <span id="choice2">16"</span
+                  ><br />
+                  White based pizza topped with grilled chicken, spinach,
+                  onions, tomatoes and goat cheese.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item calzones">
+            <div class="food-img">
+              <img src="../Images/calzone1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">The Bird Dog</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  ><span id="choice1">12"</span> / <span id="choice2">16"</span
+                  ><br />
+                  Honey mustard based pizza topped with fried chicken and
+                  bacon.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item calzones">
+            <div class="food-img">
+              <img src="../Images/calzone1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Chicken Parm</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  ><span id="choice1">12"</span> / <span id="choice2">16"</span
+                  ><br />
+                  Our traditional pizza sauce mixed with oregano and red pepper
+                  flakes. Topped with fried chicken and dusted off with parmesan
+                  cheese.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!------------------------BURGERS/BASKETS/WRAPS-------------------->
+          <!--ITEM BEGIN-->
+          <div class="food-item burgers">
+            <div class="food-img">
+              <img src="../Images/burger2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Pub Burger</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >8oz Patty topped with american cheese, lettuce, tomato,
+                  mustard & mayo.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item burgers">
+            <div class="food-img">
+              <img src="../Images/burger2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Keg Stand Burger</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >8oz Patty topped with american cheese, a flattened
+                  Bacon/Cheddar/Chive Tater Keg, ranch & honey BBQ sauce.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item burgers">
+            <div class="food-img">
+              <img src="../Images/burger2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Western Burger</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >8oz Patty topped with american cheese, bacon, onion rings,
+                  ranch & gold BBQ sauce.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item burgers">
+            <div class="food-img">
+              <img src="../Images/burger2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Dirty Palmetto Burger</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >8oz Patty topped with pimento cheese, fried pickles, bacon,
+                  ranch & honey BBQ sauce.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item burgers">
+            <div class="food-img">
+              <img src="../Images/burger2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Formula 440 Wrap</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >Crispy tenders, cheddar cheese, bacon & our secret Formula
+                  440 sauce.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item burgers">
+            <div class="food-img">
+              <img src="../Images/burger2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Fried Chicken Wrap</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >Crispy tenders, cheddar cheese, bacon, lettuce, tomato &
+                  ranch dressing.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item burgers">
+            <div class="food-img">
+              <img src="../Images/burger2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Grilled Chicken Wrap</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >Grilled Chicken, cheddar cheese, bacon, lettuce, tomato &
+                  ranch dressing.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item burgers">
+            <div class="food-img">
+              <img src="../Images/burger2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Chicken Caesar Wrap</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >Grilled Chicken, mozzarella cheese, lettuce & caesar
+                  dressing.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item burgers">
+            <div class="food-img">
+              <img src="../Images/burger2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Fingers and Fries</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >4 tenders with a side of crispy fries. Try them tossed in
+                  your favorite wing sauce!</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item burgers">
+            <div class="food-img">
+              <img src="../Images/burger2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Birddog Wrap</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >Crispy tenders, cheddar cheese, bacon & honey mustard.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item burgers">
+            <div class="food-img">
+              <img src="../Images/burger2.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Quesadilla</h2>
+              <div class="line"></div>
+              <p class="category">
+                <span
+                  >Choice of <span id="choice1">Chicken & Bacon</span> or our
+                  <span id="choice2">Veggie</span> Quesadilla.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+
+          <!------------------------CALZONES-------------------->
+          <!--ITEM BEGIN-->
+          <div class="food-item wings">
+            <div class="food-img">
+              <img src="../Images/wings1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Wings 1</h2>
+              <div class="line"></div>
+              <h3 class="food-price">$13</h3>
+              <ul class="rating">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <p class="category">Categories: <span>Wings</span></p>
+            </div>
+          </div>
+          <!--ITEM END-->
+
+          <!------------------------SALADS-------------------->
+          <!--ITEM BEGIN-->
+          <div class="food-item salads">
+            <div class="food-img">
+              <img src="../Images/salad1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Side Salad</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$13</h3>-->
+              <p class="category">
+                <span
+                  >Shredded lettuce topped with cheddar cheese and
+                  tomatoes.</span
+                >
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item salads">
+            <div class="food-img">
+              <img src="../Images/salad1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Fried Chicken Salad</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$13</h3>-->
+              <p class="category">
+                <span
+                  >Shredded lettuce topped with fried chicken, cheddar cheese,
+                  tomatoes and bacon. </span
+                ><small>Try it tossed in your favorite wing sauce.</small>
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item salads">
+            <div class="food-img">
+              <img src="../Images/salad1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Chicken Caesar Salad</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$13</h3>-->
+              <p class="category">
+                <span
+                  >Shredded lettuce topped with grilled chicken, mozzarella and
+                  parmesan cheeses.
+                </span>
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item salads">
+            <div class="food-img">
+              <img src="../Images/salad1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Pub Salad</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$13</h3>-->
+              <p class="category">
+                <span
+                  >Shredded lettuce topped with grilled chicken, cheddar cheese,
+                  tomatoes and bacon. </span
+                ><small>Try it tossed in your favorite wing sauce.</small>
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+          <!--ITEM BEGIN-->
+          <div class="food-item salads">
+            <div class="food-img">
+              <img src="../Images/salad1.jpg" alt="placeholder" />
+            </div>
+            <div class="food-content">
+              <h2 class="food-name">Dressings</h2>
+              <div class="line"></div>
+              <!--<h3 class="food-price">$13</h3>-->
+              <p class="category">
+                <span>Ranch, Blue Cheese, Honey Mustard, Caesar, Italian </span>
+              </p>
+            </div>
+          </div>
+          <!--ITEM END-->
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-body-rgba(0, 0, 0, 0.2) text-center text-white"
+      style="background-color: rgba(0, 0, 0, 0.445)"
+    >
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <h4>Find Us on Social Media</h4>
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="https://www.facebook.com/p/Tylers-Pub-at-the-Pier-100078515257313/"
+            role="button"
+            target="_blank"
+            id="social-logo"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter 
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee"
+            href="https://x.com/i85Race"
+            role="button"
+            target="_blank"
+            id="social-logo"
+            ><i class="fab fa-twitter"></i
+          ></a>-->
+
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="https://www.instagram.com/tylerspubatthepier/"
+            role="button"
+            target="_blank"
+            id="social-logo"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Youtube -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ff0000"
+            href="https://www.youtube.com/watch?v=J2CC4tYUSkQ"
+            role="button"
+            target="_blank"
+            id="social-logo"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <!-- Tik Tok -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #000000"
+            href="https://www.tiktok.com/@tylerspubatthepier"
+            role="button"
+            target="_blank"
+            id="social-logo"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      <hr />
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        <h4 id="contact-heading">Find Us</h4>
+        <ul class="contact">
+          <li>
+            <i class="fa fa-location-crosshairs"></i>
+            <a
+              href="https://www.google.com/maps/place/Tyler's+Pub+at+the+Pier/@34.651319,-82.8642395,17z/data=!3m1!4b1!4m6!3m5!1s0x8858611af44b5ba5:0x16b8d9e1076d8cf4!8m2!3d34.651319!4d-82.8616646!16s%2Fg%2F11q3y3fbhb?entry=ttu"
+              >440 Edinburgh Way | Seneca, SC 29678</a
+            >
+          </li>
+          <li>
+            <i class="fa fa-phone"></i>
+            <a href="tel:+18649739546" id="phone-num">864-973-9546</a>
+          </li>
+        </ul>
+        <h4 id="hours-heading">Hours of Operation</h4>
+        <ul class="hours">
+          <li>Monday - Wednesday: 4pm - 11pm</li>
+          <li>Thursday - Saturday: 11am - 2am</li>
+          <li>Sunday: 11am - 4pm</li>
+          <br />
+          <small>*Kitchen closes at 10pm</small>
+        </ul>
+
+        <p id="copyright">
+          <strong>T</strong>yler's <strong>P</strong>ub at the
+          <strong>P</strong>ier © 2024 Copyright
+        </p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Local JS -->
+    <script src="../Scripts/script.js"></script>
+  </body>
+</html>

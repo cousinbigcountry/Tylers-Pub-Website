@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow: scroll;
+  font-size: 18px;
+}
+body {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(241, 120, 15, 1) 0%,
+    rgba(73, 47, 121, 1) 65%
+  );
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.navbar-brand img {
+  width: 10%;
+}
+.navbar-brand img:hover {
+  opacity: 0.8;
+}
+.nav-link {
+  color: #ffff;
+}
+.nav-link:hover {
+  color: #f1780f;
+}
+/*---------HOURS/LOCATION------------*/
+
+/*---------FOOTER------------*/
+/*---------FOOTER------------*/
+footer hr {
+  display: block;
+  border: solid 5px white;
+}
+#social-logo:hover {
+  opacity: 0.8;
+}
+#contact-heading {
+  color: #f1780f;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.contact li {
+  list-style: none;
+}
+.contact a {
+  text-decoration: none;
+  color: white;
+}
+.contact a:hover {
+  color: #f1780f;
+}
+#phone-num {
+  text-decoration: none;
+  color: white;
+}
+#phone-num:hover {
+  color: #f1780f;
+}
+#hours-heading {
+  color: #f1780f;
+}
+.hours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.hours li {
+  list-style: none;
+}
+#copyright strong {
+  color: #f1780f;
+}
+/*---------MEDIA QUERIES------------*/
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  .navbar-brand img {
+    width: 30%;
+  }
+}
